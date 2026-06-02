@@ -9,7 +9,7 @@ import json
 from services.pdf_service import (
   extract_text_from_pdf
 )
-from services.openai_service import (
+from services.groq_service import (
   generate_cover_letter,
   
 )
@@ -53,27 +53,27 @@ async def generate_cover_letter_route(
         detail=f"JD PDF processing failed: {str(e)}"
       )
     
-    #3 Load Profile
-    try:
-      with open("data/profile.json", "r", encoding="utf-8") as file:
-        USER_PROFILE = json.load(file)
-    except FileNotFoundError:
-      USER_PROFILE = {}
+  #3 Load Profile
+  try:
+    with open("data/profile.json", "r", encoding="utf-8") as file:
+      USER_PROFILE = json.load(file)
+  except FileNotFoundError:
+    USER_PROFILE = {}
+  
+  #4 Generate Cover Letter
+  try:
+    cover_letter = generate_cover_letter(
+      resume_text = resume_text,
+      profile= USER_PROFILE,
+      job_description=job_description
+    )
+  except Exception as e:
+    raise HTTPException(
+      status_code=500,
+      detail=f"Groq API failed: {str(e)}"
+    )
     
-    #4 Generate Cover Letter
-    try:
-      cover_letter = generate_cover_letter(
-        resume_text = resume_text,
-        profile= USER_PROFILE,
-        job_description=job_description
-      )
-    except Exception as e:
-      raise HTTPException(
-        status_code=500,
-        detail=f"OpenAI API failed: {str(e)}"
-      )
-      
-    return {
-      "cover_letter": cover_letter
-    }
+  return {
+    "cover_letter": cover_letter
+  }
 

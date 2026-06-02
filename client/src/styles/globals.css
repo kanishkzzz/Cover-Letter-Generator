@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-50;
+}
+
+/* Subtle red glow accents for focused actions */
+.brand-glow {
+  box-shadow: 0 0 0 1px rgba(225, 29, 72, 0.25), 0 0 24px rgba(225, 29, 72, 0.12);
+}
+
