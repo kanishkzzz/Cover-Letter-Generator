@@ -1,0 +1,119 @@
+{
+  "name": "Kanishk Negi",
+  "location": "Delhi, India",
+  "education": {
+    "college": "Delhi Technological University",
+    "degree": "B.Tech",
+    "major": "Engineering Physics",
+    "minor": "Computer Science",
+    "graduation_year": 2026,
+    "cgpa": 7.02
+  },
+  "summary": "Final-year Engineering Physics student with a minor in Computer Science. Full Stack Developer experienced in building scalable web applications and AI-powered products using React, Next.js, Node.js, MongoDB, and OpenAI APIs.",
+  "experience": [
+    {
+      "company": "BharatFare",
+      "role": "Software Engineer Intern - Frontend",
+      "duration": "Dec 2025 - Mar 2026",
+      "achievements": [
+        "Improved search persistence and navigation flow by 30%",
+        "Resolved critical production signup and authentication issues",
+        "Reduced unnecessary API calls by 40%",
+        "Improved frontend responsiveness by 20%",
+        "Participate in a Bugathon, Found more than 30 bugs and solved 20+ bugs in the production codebase",
+        "Made Search filters for filtering flight search results by price, duration, type ,time and airline"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Content AI Platform",
+      "tech_stack": [
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "OpenAI API",
+        "Groq API",
+        "JWT",
+        "Fastapi",
+        "TailwindCSS"
+      ],
+      "highlights": [
+        "Built AI-powered content generation platform",
+        "Implemented JWT authentication",
+        "Integrated AI text and image generation"
+      ]
+    },
+    {
+      "name": "Billicious",
+      "tech_stack": [
+        "React",
+        "Next.js 14",
+        "Supabase",
+        "Zustand",
+        "Tanstack Query",
+        "TailwindCSS"
+      ],
+      "highlights": [
+        "Expense splitting platform",
+        "Group settlements",
+        "Real-time balance updates"
+      ]
+    },
+    {
+      "name": "FoodInt",
+      "tech_stack": [
+        "React",
+        "Node.js",
+        "Redis",
+        "Kafka",
+        "TailwindCSS",
+        "MERN Stack",
+        "MongoDB",
+        "Docker",
+        "AWS"
+      ],
+      "highlights": [
+        "Food discovery platform",
+        "Role-based access control",
+        "AWS deployment"
+      ]
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "TailwindCSS",
+      "HTML",
+      "CSS"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "JWT Authentication"
+    ],
+    "database": [
+      "MongoDB",
+      "Supabase",
+      "Firebase"
+    ],
+    "cloud_devops": [
+      "Redis",
+      "Kafka",
+      "Docker",
+      "AWS EC2",
+      "Vercel"
+    ],
+    "ai": [
+      "OpenAI API",
+      "Groq API",
+      "Prompt Engineering",
+      "AI Workflows"
+    ]
+  },
+  "career_goal": "Seeking Full Stack Developer and Software Engineering roles with a strong interest in AI-powered products and modern web applications."
+}

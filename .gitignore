@@ -1,0 +1,31 @@
+# -----------------------------
+# Security & Environment
+# -----------------------------
+.env
+.env.*
+venv/
+env/
+.venv/
+
+# -----------------------------
+# Python Backend (Server)
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# -----------------------------
+# Node/Frontend (Client)
+# -----------------------------
+node_modules/
+dist/
+build/
+.next/
+.out/
+
+# -----------------------------
+# OS Generated Files
+# -----------------------------
+.DS_Store
+Thumbs.db
