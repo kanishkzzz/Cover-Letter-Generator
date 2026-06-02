@@ -4,6 +4,11 @@ An AI-powered web application that generates personalized cover letters from a r
 
 Users can upload their resume PDF and either paste a job description or upload a JD PDF. The application analyzes both documents and generates a tailored cover letter using AI.
 
+AI Cover Letter Generator UI
+
+<img width="1651" height="790" alt="image" src="https://github.com/user-attachments/assets/90f16e18-8793-43ed-bf69-0267b2dca628" />
+
+
 ## 🌐 Live Demo
 
 Frontend: https://cover-letter-generator-teal.vercel.app/
